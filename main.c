@@ -1,3 +1,6 @@
+/**
+@file main.c
+*/
 #include<msp430x14x.h>
 #include "lcd.h"
 #include "portyLcd.h"
