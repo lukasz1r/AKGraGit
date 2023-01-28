@@ -1,4 +1,5 @@
-portyLcd.pbi: C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\portyLcd.c \
+portyLcd.pbi: \
+  C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\portyLcd.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\msp430x14x.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc/in430.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc/intrinsics.h

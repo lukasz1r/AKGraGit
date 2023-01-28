@@ -1,15 +1,15 @@
-"C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\lcd.c"
+"C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\lcd.c"
 -std=c99
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\Debug\Obj\lcd.pbi.dep
+C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\Debug\Obj\lcd.pbi.dep
 -o
 lcd.pbi
 -I
-C:\Users\lukas\Desktop\gierka\gra\kody\Lcd
+C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\430\inc\dlib
 -I

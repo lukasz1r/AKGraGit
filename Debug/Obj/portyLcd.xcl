@@ -1,15 +1,15 @@
-"C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\portyLcd.c"
+"C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\portyLcd.c"
 -std=c99
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\Debug\Obj\portyLcd.pbi.dep
+C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\Debug\Obj\portyLcd.pbi.dep
 -o
 portyLcd.pbi
 -I
-C:\Users\lukas\Desktop\gierka\gra\kody\Lcd
+C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\430\inc\dlib
 -I

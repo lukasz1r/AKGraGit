@@ -1,6 +1,6 @@
-lcd.pbi: C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\lcd.c \
+lcd.pbi: C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\lcd.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\msp430x14x.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc/in430.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc/intrinsics.h \
-  C:\Users\lukas\Desktop\gierka\gra\kody\Lcd/lcd.h \
-  C:\Users\lukas\Desktop\gierka\gra\kody\Lcd/portyLcd.h
+  C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit/lcd.h \
+  C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit/portyLcd.h

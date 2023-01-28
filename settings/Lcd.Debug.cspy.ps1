@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\common\bin\cspybat" -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\settings\Lcd.Debug.general.xcl" --backend -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\settings\Lcd.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\common\bin\cspybat" -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\settings\Lcd.Debug.general.xcl" --backend -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\settings\Lcd.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\common\bin\cspybat" -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\settings\Lcd.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\settings\Lcd.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\common\bin\cspybat" -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\settings\Lcd.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\lukas\Desktop\gierka\gra\kody\Lcd\AKGraGit\settings\Lcd.Debug.driver.xcl" 
 }

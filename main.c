@@ -25,6 +25,7 @@ char linia2[16] = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','
 unsigned int indexLinii = 0;
 unsigned int punkty = 0;
 
+//Funkcja wyswietlajaca napis na ekranie, jej parametry okreslaja: teskst, linie oraz pozycje
 void wyswietl(char *napis, int linia, int pozycja)
 {
 	if(linia==2) SEND_CMD(DD_RAM_ADDR2+pozycja);
@@ -37,6 +38,7 @@ void wyswietl(char *napis, int linia, int pozycja)
 	}
 }
 
+//Funkcja odpowiadajaca za wyswietlanie rozgyrwki na ekran. Wejscia funkcji to stany linii zaleznie od momentu rozgrywki
 void wyswietlGre(char linia1[], char linia2[]){
 	SEND_CMD(DD_RAM_ADDR);
 	for(int i=0; i<16; i++)
@@ -50,6 +52,7 @@ void wyswietlGre(char linia1[], char linia2[]){
 	}
 }
 
+//Funkcja pozwalajaca na zdefiniowanie postaci uzywanych przez gre. Postacie to kura, lis, koniec_gry, oraz jajko
 void zdefiniujZnaki(){
 	SEND_CMD(CG_RAM_ADDR);
         //kura
@@ -69,6 +72,7 @@ void zdefiniujZnaki(){
 	for(int i =0; i<8; i++)  SEND_CHAR(jajko[i]);
 }
 
+//Funkcja wykonujaca restart gry
 void resetujGre()
 {
 	punkty = 0;
@@ -83,6 +87,7 @@ void resetujGre()
 	}
 }
 
+//Funkcja umozliwiajaca ustawienie nicku gracza
 const char* UstawNick(){
 	clearDisplay();
         int iter = 0;
@@ -133,6 +138,7 @@ const char* UstawNick(){
         return opis;
 }
 
+//Funkcja glowna odpowiedzialna za rozgrywke
 int Gra(char linia1[], char linia2[], int LMP3_bits) {
     _BIS_SR(LPM3_bits); 
     if((P4IN & BIT4) ==0) {
@@ -193,7 +199,7 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
     }
     return 0;
 }
-
+//Funkcja sortujaca
 void sortuj(int howMany) {
   if (howMany > 1) {
     for (int i=0; i<howMany-1; i++) {
@@ -219,6 +225,7 @@ void sortuj(int howMany) {
   }
 }
 
+//Funkcja sterujaca gra
 void GraEngine(int LMP3_bits) {
   for (int gh=0; gh<16; gh++) {
     linia1[gh] = ' ';
@@ -247,6 +254,7 @@ void GraEngine(int LMP3_bits) {
 	clearDisplay();
 }
 
+//Funkcja wyswietlajaca opis gry
 void Opis(){
   	clearDisplay();
   	char* opis[] = {"P4 aby cofnac","P1-gora, P2-dol","Nasza gra polega","na omijaniu","przeszkod przy",
@@ -290,10 +298,10 @@ void Opis(){
 	}
 }
 
+//Funkcja wypisujaca autorów
 void Autorzy(){
 	clearDisplay();
-	char* opis[] = {"P4 aby cofnac","P1-gora, P2-dol","Autorzy:","Dawid Kobeszko","Jakub Komarewski",
-	  "Jakub Orlowski"};
+	char* opis[] = {"Autorzy:","LK","IK", "AK", "ZK", "P4 aby cofnac","P1-gora, P2-dol"};
 	wyswietl(opis[0],1,0);
 	wyswietl(opis[1],2,0);
 	int i=1;
@@ -333,6 +341,7 @@ void Autorzy(){
 	}
 }
 
+//Funkcja zestawiajaca nick z wynikiem
 char* concat(int it) {
 	static char arr[16];
 	int len=0;
@@ -365,7 +374,7 @@ char* concat(int it) {
 	return &(arr[0]);
 }
 
-
+//Funkcja wyswietlajaca najwyzszy wynik
 void Highscore() {
 	clearDisplay();
 	char* temp;
@@ -428,7 +437,7 @@ void Highscore() {
 }
 
 
-
+//Funkcja odpowiedzialna za menu
 void menu(int LMP3_bits){
 
 	short int flag1 = 0;
@@ -509,6 +518,7 @@ void main( void )
 	
 	_EINT();                               // w31czenie przerwan
 	
+        //zobaczyc czy mozna te gwiazdki zamienic na kometarz zwykly
 	/******************************************************************************/
         
 	menu(LPM3_bits);
