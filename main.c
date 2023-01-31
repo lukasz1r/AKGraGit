@@ -28,6 +28,10 @@ char linia2[16] = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','
 unsigned int indexLinii = 0;
 unsigned int punkty = 0;
 
+
+
+
+
 //Funkcja wyswietlajaca napis na ekranie, jej parametry okreslaja: teskst, linie oraz pozycje
 void wyswietl(char *napis, int linia, int pozycja)
 {
@@ -39,6 +43,68 @@ void wyswietl(char *napis, int linia, int pozycja)
 		SEND_CHAR(napis[i]);
 		i++;
 	}
+}
+
+
+void wyswietlLiczba(int x){
+	int temp = x;
+	int licznik=0;
+	int z=10;
+	while(temp>0){
+	 licznik++;
+	 temp/=10;
+	}
+	const int rozmiar = licznik;
+	char tekst[16] = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '};
+	for(int i =licznik-1; i >= 0; i--){
+	  tekst[i] = x%10 + 48;
+	  x /= 10;
+	}
+	wyswietl(tekst,2,6);
+}
+
+void blastKury() // dzwiek kury
+{
+    P4DIR &= ~0xF0;
+    P4DIR |= 0x0C; // ustawienie buzzera
+    int n, i;
+    int f = 100;
+    for (i = 0; i < 50; i++)
+    {
+        P4OUT |= 0x08;
+        P4OUT &= ~0x04;
+        for (n = 0; n < f; n++)
+        {
+        }
+        P4OUT |= 0x04;
+        P4OUT &= ~0x08;
+        for (n = 0; n < f; n++)
+        {
+        }
+        f = f+2;
+    }
+}
+
+void blastZjedzenia() // dzwiek zjedzenia
+{
+    P4DIR &= ~0xF0;
+    P4DIR |= 0x0C; // ustawienie buzzera
+    int n, i;
+    int f = 100;
+    for (i = 0; i < 70; i++)
+    {
+        P4OUT |= 0x08;
+        P4OUT &= ~0x04;
+        for (n = 0; n < f; n++)
+        {
+        }
+        P4OUT |= 0x04;
+        P4OUT &= ~0x08;
+        for (n = 0; n < f; n++)
+        {
+        }
+        f = f+200;
+    }
 }
 
 //Funkcja odpowiadajaca za wyswietlanie rozgyrwki na ekran. Wejscia funkcji to stany linii zaleznie od momentu rozgrywki
@@ -58,15 +124,16 @@ void wyswietlGre(char linia1[], char linia2[]){
 //Funkcja pozwalajaca na zdefiniowanie postaci uzywanych przez gre. Postacie to kura, lis, koniec_gry, oraz jajko
 void zdefiniujZnaki(){
 	SEND_CMD(CG_RAM_ADDR);
-        //kura
+
+         //kura
 	char samolot[8] = {0x0,0x2,0x3,0xE,0x1E,0x4,0xA,0x0};
 	for(int i =0; i<8; i++)  SEND_CHAR(samolot[i]);
-
+        
         //lis
 	char wrog[8] = {0x0, 0xA, 0x1F, 0x15, 0xE, 0x4, 0x0, 0x0};
 	for(int i =0; i<8; i++)  SEND_CHAR(wrog[i]);
         
-        //animacja zderzenia dalem tam czaszke
+        //animacja zderzenia dalem tam czaszkev
 	char wybuch[8] = {0x1E, 0x15, 0x1F,0xA ,0xA , 0xA, 0xA,0xA };
 	for(int i =0; i<8; i++)  SEND_CHAR(wybuch[i]);
         
@@ -141,14 +208,37 @@ const char* UstawNick(){
         return opis;
 }
 
+
+
 //Funkcja glowna odpowiedzialna za rozgrywke
 int Gra(char linia1[], char linia2[], int LMP3_bits) {
     _BIS_SR(LPM3_bits); 
+     blastKury();
+     
+     if((P4IN & BIT6) == 0) { 
+       clearDisplay();
+       while(1){
+         
+         wyswietl("PAUZA ",1,6);
+         wyswietl("Wynik ",2,0);
+         
+         if(punkty<=2){
+          wyswietl("0", 2, 6); 
+         }else{  
+           wyswietlLiczba(punkty-3);       
+         }
+         if((P4IN & BIT7) == 0){
+           break;
+          }
+       }
+     }
+       
     if((P4IN & BIT4) ==0) {
         if(linia1[0] == 1) {
             linia1[0] = 2;
             linia2[0] = ' ';
             wyswietlGre(linia1, linia2);
+            blastZjedzenia();
             return 1;
         }
         linia2[0] = ' ';
@@ -157,10 +247,13 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
     }
     if((P4IN & BIT5) ==0){
 	if(linia2[0] == 1) {
+          
             linia2[0] = 2;
             linia1[0] = ' ';
             wyswietlGre(linia1, linia2);
+            blastZjedzenia();
             return 1;
+            
         }
         linia1[0] = ' ';
         linia2[0] = 0;
@@ -179,6 +272,7 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
 	    linia1[0] = 2;
             linia2[0] = ' ';
             wyswietlGre(linia1, linia2);
+            blastZjedzenia();
             return 1;
         }
         linia1[0] = 0;
@@ -188,6 +282,7 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
             linia2[0] = 2;
             linia1[0] = ' ';
             wyswietlGre(linia1, linia2);
+            blastZjedzenia();
             return 1;
         }
         linia2[0] = 0;
@@ -195,11 +290,21 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
     if(licznik%5 == 0) {
 	  punkty++;
 	  P2OUT ^=BIT1;
-      licznik=1;
       int losowa = rand()%2;
       if(losowa == 0) linia1[15] = 1;
       else linia2[15] = 1;
     }
+    /////////////////////////////////////proba dodania jajka
+    if(licznik%6 == 0 && !(licznik%5)) {
+	  //punkty++;
+          //punkty++;
+	  P2OUT ^=BIT1;
+      licznik=1;
+      int losowa = rand()%2;
+      if(losowa == 0) linia1[15] = 3;
+      else linia2[15] = 3;
+    }
+    
     return 0;
 }
 //Funkcja sortujaca
@@ -250,7 +355,7 @@ void GraEngine(int LMP3_bits) {
                 howMany--;
 	}
 	strcpy(highscoreName[setIndex], t);
-	highscoreScore[setIndex] = punkty;
+	highscoreScore[setIndex] = punkty-3;
         howMany++;
         sortuj(howMany);
 	resetujGre();
@@ -307,44 +412,15 @@ void Opis(){
 //Funkcja wypisujaca autorów
 void Autorzy(){
 	clearDisplay();
-	char* opis[] = {"Autorzy:","LK","IK", "AK", "ZK", "P4 aby cofnac","P1-gora, P2-dol"};
-	wyswietl(opis[0],1,0);
-	wyswietl(opis[1],2,0);
-	int i=1;
-	short int flag1 = 0;
-	short int flag2 = 0;
-	short int flag3 = 0;
-	short int flag4 = 0;
-	while(1){
-
-		if((P4IN & BIT4) != 0)flag1=1;
-		if((P4IN & BIT5) != 0)flag2=1;
-		if((P4IN & BIT6) != 0)flag3=1;
-		if((P4IN & BIT7) != 0)flag4=1;
-	  
-		if(((P4IN & BIT4) == 0)&&(flag1 == 1)){
-			flag1 = 0;
-			if(i==0) continue;
-			clearDisplay();
-			wyswietl(opis[i-1],1,0);
-			wyswietl(opis[i],2,0);
-			i--;
-		}
-
-		if(((P4IN & BIT5) == 0)&&(flag2 == 1)){
-			flag2 = 0;
-			if(i==5) continue;
-			clearDisplay();
-			wyswietl(opis[i],1,0);
-			wyswietl(opis[i+1],2,0);
-			i++;
-		}
-
-		if(((P4IN & BIT7) == 0)&&(flag4 == 1)){
-			clearDisplay();
-			break;
-		}
+        while(1){
+	wyswietl("Autorzy",1,0);
+	wyswietl("IK  LK  AK  ZK",2,0);
+	if((P4IN & BIT7) == 0)
+	{
+		clearDisplay();
+		break;
 	}
+}
 }
 
 //Funkcja zestawiajaca nick z wynikiem
@@ -436,6 +512,7 @@ void Highscore() {
 			flag3 = 1;
 		}
 		if (((P4IN & BIT7) == 0)&&(flag3==1)) {
+                         
 			clearDisplay();
 			break;
 		}
@@ -451,11 +528,10 @@ void menu(int LMP3_bits){
  	short int flag3 = 0;
  	short int flag4 = 0;
   	while(1){
-
- 	wyswietl("Gra",1,0);
-	wyswietl("Opis",1,4);
-	wyswietl("Autorzy",1,9);
-	wyswietl("HighScore",2,7);
+ 	wyswietl("1.Gra",1,0);
+	wyswietl("2.Opis",2,0);
+	wyswietl("3.Autorzy",1,7);
+	wyswietl("4.Wyniki",2,7);
 
 	if(((P4IN & BIT4) == 0)&&(flag1 == 1)){
 	  	GraEngine(LPM3_bits);
@@ -479,9 +555,9 @@ void menu(int LMP3_bits){
 		flag4=0;
 	}
 	
-	if(((P4IN & BIT7) == 0)&&(flag4 == 1)){
+	if(((P4IN & BIT7) == 0)&&(flag4==1)){
 		Highscore();
-	  	flag1=0;
+                flag1=0;
 		flag2=0;
 		flag3=0;
 		flag4=0;
@@ -495,7 +571,8 @@ void menu(int LMP3_bits){
 
 void main( void )
 {
-	P4DIR &= ~BIT4;
+	
+        P4DIR &= ~BIT4;
 	P4DIR &= ~BIT5;
 	P4DIR &= ~BIT6;
 	P4DIR &= ~BIT7;
