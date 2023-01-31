@@ -216,7 +216,7 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
        while(1){
          
          wyswietl("PAUZA ",1,6);
-         wyswietl("Wynik ",2,0);     ///TY TU BY WYWALILA TEN WYNIK W PAUZIE BO ON ZA DOBRZE CHYBA NIE DZIALAL ALE NIE JESTEM PEWNA BO NIE WNIKALAM JUZ WTEDY I ZOSTAWILA SAMA PAUZE
+         wyswietl("Wynik ",2,0); 
          
          if(punkty<=2){
           wyswietl("0", 2, 6); 
@@ -290,10 +290,10 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
       if(losowa == 0) linia1[15] = 1;
       else linia2[15] = 1;
     }
-    /////////////////////////////////////////////DODANIE JAJKA - pytanie czy dolicza punkty
+    
     if(licznik%6 == 0 && !(licznik%5)) {
-	  //punkty++;
-          //punkty++;
+	  punkty++;
+          punkty++;
 	  P2OUT ^=BIT1;
       licznik=1;
       int losowa = rand()%2;
@@ -364,41 +364,10 @@ void GraEngine(int LMP3_bits) {
 ////////////////////////////////////////////////////////////////////////////
 void Opis(){
   	clearDisplay();
-  	char* opis[] = {"P4 aby cofnac","P1-gora, P2-dol","Nasza gra polega","na omijaniu","przeszkod przy",
-	  "pomocy dwoch","przyciskow.","Gra liczy i","zapisuje punkty","kazdego gracza","i jego nick"};
-  	wyswietl(opis[0],1,0);
-  	wyswietl(opis[1],2,0);
-  	int i=1;
-  	short int flag1 = 0;
-  	short int flag2 = 0;
-  	short int flag3 = 0;
-  	short int flag4 = 0;
 	while(1){
-	  
-	   	if((P4IN & BIT4) != 0)flag1=1;
-	 	if((P4IN & BIT5) != 0)flag2=1;
-	 	if((P4IN & BIT6) != 0)flag3=1;
-	 	if((P4IN & BIT7) != 0)flag4=1;
-	  
-		if(((P4IN & BIT4) == 0)&&(flag1 == 1)){
-		  	flag1 = 0;
-			if(i==0) continue;
-			clearDisplay();
-			wyswietl(opis[i-1],1,0);
-  			wyswietl(opis[i],2,0);
-			i--;
-		}
-
-		if(((P4IN & BIT5) == 0)&&(flag2 == 1)){
-	    	flag2 = 0;
-			if(i==10) continue;
-			clearDisplay();
-			wyswietl(opis[i],1,0);
-  			wyswietl(opis[i+1],2,0);
-	  		i++;
-		}
-
-		if(((P4IN & BIT7) == 0)&&(flag4 == 1)){
+                wyswietl("P1-gora P2-dol",1,0);
+                wyswietl("P3-pauza P4-exit",2,0);
+		if(((P4IN & BIT7) == 0)){
 			clearDisplay();
 	   		break;
 		}
