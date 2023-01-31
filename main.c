@@ -133,8 +133,8 @@ void zdefiniujZnaki(){
 	char wrog[8] = {0x0, 0xA, 0x1F, 0x15, 0xE, 0x4, 0x0, 0x0};
 	for(int i =0; i<8; i++)  SEND_CHAR(wrog[i]);
         
-        //animacja zderzenia dalem tam czaszkev
-	char wybuch[8] = {0x1E, 0x15, 0x1F,0xA ,0xA , 0xA, 0xA,0xA };
+        //ikonka po zderzeniu z lisem (czaszka)
+	char wybuch[8] = {0x4,0x1F ,0x15 ,0x1F ,0x11 , 0xE, 0x0, 0x0};
 	for(int i =0; i<8; i++)  SEND_CHAR(wybuch[i]);
         
         //wstawienie jajka, na razie nie dziala z niczym innym
@@ -409,7 +409,7 @@ void Opis(){
 	}
 }
 
-//Funkcja wypisujaca autorów
+//Funkcja wypisujaca autorï¿½w
 void Autorzy(){
 	clearDisplay();
         while(1){
@@ -578,7 +578,7 @@ void main( void )
 	P4DIR &= ~BIT7;
 	P4DIR |= 0x0C;
 	WDTCTL=WDTPW + WDTHOLD;           // Wy31czenie WDT
-	InitPortsLcd();                   // inicjalizacja portów LCD
+	InitPortsLcd();                   // inicjalizacja portï¿½w LCD
 	InitLCD();                        // inicjalizacja LCD
 	clearDisplay();                   // czyszczenie wyowietlacza
 	
@@ -588,7 +588,7 @@ void main( void )
 		IFG1 &= ~OFIFG;                     // Czyszczenie flgi OSCFault
 		for (i = 0xFF; i > 0; i--);         // odczekanie
 	}
-	while ((IFG1 & OFIFG) == OFIFG);    // dopóki OSCFault jest ci1gle ustawiona
+	while ((IFG1 & OFIFG) == OFIFG);    // dopï¿½ki OSCFault jest ci1gle ustawiona
 	
 	BCSCTL1 |= DIVA_3;                    // ACLK=8 MHz/8=1 MHz
 	BCSCTL2 |= SELM0 | SELM1;             // MCLK= LFTX1 =ACLK
