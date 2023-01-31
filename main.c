@@ -28,10 +28,6 @@ char linia2[16] = {' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','
 unsigned int indexLinii = 0;
 unsigned int punkty = 0;
 
-
-
-
-
 //Funkcja wyswietlajaca napis na ekranie, jej parametry okreslaja: teskst, linie oraz pozycje
 void wyswietl(char *napis, int linia, int pozycja)
 {
@@ -63,7 +59,7 @@ void wyswietlLiczba(int x){
 	wyswietl(tekst,2,6);
 }
 
-void blastKury() // dzwiek kury
+void blastKury() //dzwiek poruszania sie kury
 {
     P4DIR &= ~0xF0;
     P4DIR |= 0x0C; // ustawienie buzzera
@@ -124,20 +120,20 @@ void wyswietlGre(char linia1[], char linia2[]){
 //Funkcja pozwalajaca na zdefiniowanie postaci uzywanych przez gre. Postacie to kura, lis, koniec_gry, oraz jajko
 void zdefiniujZnaki(){
 	SEND_CMD(CG_RAM_ADDR);
-
+	
          //kura
-	char samolot[8] = {0x0,0x2,0x3,0xE,0x1E,0x4,0xA,0x0};
-	for(int i =0; i<8; i++)  SEND_CHAR(samolot[i]);
+	char kura[8] = {0x0,0x2,0x3,0xE,0x1E,0x4,0xA,0x0};
+	for(int i =0; i<8; i++)  SEND_CHAR(kura[i]);
         
         //lis
-	char wrog[8] = {0x0, 0xA, 0x1F, 0x15, 0xE, 0x4, 0x0, 0x0};
-	for(int i =0; i<8; i++)  SEND_CHAR(wrog[i]);
+	char lis[8] = {0x0, 0xA, 0x1F, 0x15, 0xE, 0x4, 0x0, 0x0};
+	for(int i =0; i<8; i++)  SEND_CHAR(lis[i]);
         
         //ikonka po zderzeniu z lisem (czaszka)
-	char wybuch[8] = {0x4,0x1F ,0x15 ,0x1F ,0x11 , 0xE, 0x0, 0x0};
-	for(int i =0; i<8; i++)  SEND_CHAR(wybuch[i]);
+	char czaszka[8] = {0x4,0x1F ,0x15 ,0x1F ,0x11 , 0xE, 0x0, 0x0};
+	for(int i =0; i<8; i++)  SEND_CHAR(czaszka[i]);
         
-        //wstawienie jajka, na razie nie dziala z niczym innym
+        //jajko
 	char jajko[8] = {0x0,0x4 ,0xA , 0x11,0x11 ,0x11 ,0xA ,0x4 };
 	for(int i =0; i<8; i++)  SEND_CHAR(jajko[i]);
 }
@@ -220,7 +216,7 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
        while(1){
          
          wyswietl("PAUZA ",1,6);
-         wyswietl("Wynik ",2,0);
+         wyswietl("Wynik ",2,0);     ///TY TU BY WYWALILA TEN WYNIK W PAUZIE BO ON ZA DOBRZE CHYBA NIE DZIALAL ALE NIE JESTEM PEWNA BO NIE WNIKALAM JUZ WTEDY I ZOSTAWILA SAMA PAUZE
          
          if(punkty<=2){
           wyswietl("0", 2, 6); 
@@ -294,7 +290,7 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
       if(losowa == 0) linia1[15] = 1;
       else linia2[15] = 1;
     }
-    /////////////////////////////////////proba dodania jajka
+    /////////////////////////////////////////////DODANIE JAJKA - pytanie czy dolicza punkty
     if(licznik%6 == 0 && !(licznik%5)) {
 	  //punkty++;
           //punkty++;
@@ -307,7 +303,7 @@ int Gra(char linia1[], char linia2[], int LMP3_bits) {
     
     return 0;
 }
-//Funkcja sortujaca
+//Funkcja sortujaca wyniki graczy 
 void sortuj(int howMany) {
   if (howMany > 1) {
     for (int i=0; i<howMany-1; i++) {
@@ -409,7 +405,7 @@ void Opis(){
 	}
 }
 
-//Funkcja wypisujaca autor�w
+//Funkcja wypisujaca inicjaly autorow
 void Autorzy(){
 	clearDisplay();
         while(1){
@@ -572,13 +568,13 @@ void menu(int LMP3_bits){
 void main( void )
 {
 	
-        P4DIR &= ~BIT4;
+    P4DIR &= ~BIT4;
 	P4DIR &= ~BIT5;
 	P4DIR &= ~BIT6;
 	P4DIR &= ~BIT7;
 	P4DIR |= 0x0C;
 	WDTCTL=WDTPW + WDTHOLD;           // Wy31czenie WDT
-	InitPortsLcd();                   // inicjalizacja port�w LCD
+	InitPortsLcd();                   // inicjalizacja port w LCD
 	InitLCD();                        // inicjalizacja LCD
 	clearDisplay();                   // czyszczenie wyowietlacza
 	
@@ -588,7 +584,7 @@ void main( void )
 		IFG1 &= ~OFIFG;                     // Czyszczenie flgi OSCFault
 		for (i = 0xFF; i > 0; i--);         // odczekanie
 	}
-	while ((IFG1 & OFIFG) == OFIFG);    // dop�ki OSCFault jest ci1gle ustawiona
+	while ((IFG1 & OFIFG) == OFIFG);    // dop ki OSCFault jest ci1gle ustawiona
 	
 	BCSCTL1 |= DIVA_3;                    // ACLK=8 MHz/8=1 MHz
 	BCSCTL2 |= SELM0 | SELM1;             // MCLK= LFTX1 =ACLK
