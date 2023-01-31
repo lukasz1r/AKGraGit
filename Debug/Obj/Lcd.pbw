@@ -15176,7 +15176,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1178@F@wyswietlLiczba@temp",
+    "ID": "c:main.c@1208@F@wyswietlLiczba@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
@@ -15190,7 +15190,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1194@F@wyswietlLiczba@licznik",
+    "ID": "c:main.c@1224@F@wyswietlLiczba@licznik",
     "What": "Variable",
     "defdec": "Def",
     "display": "licznik",
@@ -15204,7 +15204,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1211@F@wyswietlLiczba@z",
+    "ID": "c:main.c@1241@F@wyswietlLiczba@z",
     "What": "Variable",
     "defdec": "Def",
     "display": "z",
@@ -15218,7 +15218,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1271@F@wyswietlLiczba@rozmiar",
+    "ID": "c:main.c@1301@F@wyswietlLiczba@rozmiar",
     "What": "Variable",
     "defdec": "Def",
     "display": "rozmiar",
@@ -15232,7 +15232,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1302@F@wyswietlLiczba@tekst",
+    "ID": "c:main.c@1332@F@wyswietlLiczba@tekst",
     "What": "Variable",
     "defdec": "Def",
     "display": "tekst",
@@ -15246,7 +15246,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1392@F@wyswietlLiczba@i",
+    "ID": "c:main.c@1422@F@wyswietlLiczba@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -15266,7 +15266,7 @@
     "display": "void blastKury(void)",
     "location": {
       "column": "6",
-      "line": "62",
+      "line": "63",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "blastKury",
@@ -15274,13 +15274,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1613@F@blastKury@n",
+    "ID": "c:main.c@1645@F@blastKury@n",
     "What": "Variable",
     "defdec": "Def",
     "display": "n",
     "location": {
       "column": "9",
-      "line": "66",
+      "line": "67",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "n",
@@ -15288,13 +15288,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1613@F@blastKury@i",
+    "ID": "c:main.c@1645@F@blastKury@i",
     "What": "Variable",
     "defdec": "Dec",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "66",
+      "line": "67",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15302,13 +15302,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1628@F@blastKury@f",
+    "ID": "c:main.c@1660@F@blastKury@f",
     "What": "Variable",
     "defdec": "Def",
     "display": "f",
     "location": {
       "column": "9",
-      "line": "67",
+      "line": "68",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "f",
@@ -15322,7 +15322,7 @@
     "display": "void blastZjedzenia(void)",
     "location": {
       "column": "6",
-      "line": "84",
+      "line": "86",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "blastZjedzenia",
@@ -15330,13 +15330,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2030@F@blastZjedzenia@n",
+    "ID": "c:main.c@2064@F@blastZjedzenia@n",
     "What": "Variable",
     "defdec": "Def",
     "display": "n",
     "location": {
       "column": "9",
-      "line": "88",
+      "line": "90",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "n",
@@ -15344,13 +15344,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2030@F@blastZjedzenia@i",
+    "ID": "c:main.c@2064@F@blastZjedzenia@i",
     "What": "Variable",
     "defdec": "Dec",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "88",
+      "line": "90",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15358,13 +15358,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2045@F@blastZjedzenia@f",
+    "ID": "c:main.c@2079@F@blastZjedzenia@f",
     "What": "Variable",
     "defdec": "Def",
     "display": "f",
     "location": {
       "column": "9",
-      "line": "89",
+      "line": "91",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "f",
@@ -15378,7 +15378,7 @@
     "display": "void wyswietlGre(char *, char *)",
     "location": {
       "column": "6",
-      "line": "107",
+      "line": "109",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "wyswietlGre",
@@ -15386,13 +15386,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2537@F@wyswietlGre@i",
+    "ID": "c:main.c@2571@F@wyswietlGre@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "109",
+      "line": "111",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15400,13 +15400,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2622@F@wyswietlGre@i",
+    "ID": "c:main.c@2656@F@wyswietlGre@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "114",
+      "line": "116",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15420,7 +15420,7 @@
     "display": "void zdefiniujZnaki(void)",
     "location": {
       "column": "6",
-      "line": "121",
+      "line": "123",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "zdefiniujZnaki",
@@ -15428,13 +15428,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2866@F@zdefiniujZnaki@kura",
+    "ID": "c:main.c@2900@F@zdefiniujZnaki@kura",
     "What": "Variable",
     "defdec": "Def",
     "display": "kura",
     "location": {
       "column": "7",
-      "line": "125",
+      "line": "127",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "kura",
@@ -15442,13 +15442,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2923@F@zdefiniujZnaki@i",
+    "ID": "c:main.c@2957@F@zdefiniujZnaki@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "126",
+      "line": "128",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15456,13 +15456,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2991@F@zdefiniujZnaki@lis",
+    "ID": "c:main.c@3025@F@zdefiniujZnaki@lis",
     "What": "Variable",
     "defdec": "Def",
     "display": "lis",
     "location": {
       "column": "7",
-      "line": "129",
+      "line": "131",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "lis",
@@ -15470,13 +15470,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3055@F@zdefiniujZnaki@i",
+    "ID": "c:main.c@3089@F@zdefiniujZnaki@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "130",
+      "line": "132",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15484,13 +15484,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3156@F@zdefiniujZnaki@czaszka",
+    "ID": "c:main.c@3190@F@zdefiniujZnaki@czaszka",
     "What": "Variable",
     "defdec": "Def",
     "display": "czaszka",
     "location": {
       "column": "7",
-      "line": "133",
+      "line": "135",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "czaszka",
@@ -15498,13 +15498,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3226@F@zdefiniujZnaki@i",
+    "ID": "c:main.c@3260@F@zdefiniujZnaki@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "134",
+      "line": "136",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15512,13 +15512,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3299@F@zdefiniujZnaki@jajko",
+    "ID": "c:main.c@3333@F@zdefiniujZnaki@jajko",
     "What": "Variable",
     "defdec": "Def",
     "display": "jajko",
     "location": {
       "column": "7",
-      "line": "137",
+      "line": "139",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "jajko",
@@ -15526,13 +15526,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3366@F@zdefiniujZnaki@i",
+    "ID": "c:main.c@3400@F@zdefiniujZnaki@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "138",
+      "line": "140",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15546,7 +15546,7 @@
     "display": "void resetujGre(void)",
     "location": {
       "column": "6",
-      "line": "142",
+      "line": "144",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "resetujGre",
@@ -15554,13 +15554,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3565@F@resetujGre@i",
+    "ID": "c:main.c@3599@F@resetujGre@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "149",
+      "line": "151",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15574,7 +15574,7 @@
     "display": "const char * UstawNick(void)",
     "location": {
       "column": "13",
-      "line": "157",
+      "line": "159",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "UstawNick",
@@ -15582,13 +15582,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3740@F@UstawNick@iter",
+    "ID": "c:main.c@3774@F@UstawNick@iter",
     "What": "Variable",
     "defdec": "Def",
     "display": "iter",
     "location": {
       "column": "13",
-      "line": "159",
+      "line": "161",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "iter",
@@ -15596,13 +15596,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3756@F@UstawNick@opis",
+    "ID": "c:main.c@3790@F@UstawNick@opis",
     "What": "Variable",
     "defdec": "Def",
     "display": "opis",
     "location": {
       "column": "7",
-      "line": "160",
+      "line": "162",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "opis",
@@ -15610,13 +15610,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3832@F@UstawNick@flag1",
+    "ID": "c:main.c@3866@F@UstawNick@flag1",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag1",
     "location": {
       "column": "12",
-      "line": "163",
+      "line": "165",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag1",
@@ -15624,13 +15624,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3855@F@UstawNick@flag2",
+    "ID": "c:main.c@3889@F@UstawNick@flag2",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag2",
     "location": {
       "column": "12",
-      "line": "164",
+      "line": "166",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag2",
@@ -15638,13 +15638,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3878@F@UstawNick@flag3",
+    "ID": "c:main.c@3912@F@UstawNick@flag3",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag3",
     "location": {
       "column": "12",
-      "line": "165",
+      "line": "167",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag3",
@@ -15652,13 +15652,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3901@F@UstawNick@flag4",
+    "ID": "c:main.c@3935@F@UstawNick@flag4",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag4",
     "location": {
       "column": "12",
-      "line": "166",
+      "line": "168",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag4",
@@ -15672,7 +15672,7 @@
     "display": "int Gra(char *, char *, int)",
     "location": {
       "column": "5",
-      "line": "210",
+      "line": "212",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "Gra",
@@ -15680,13 +15680,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6123@F@Gra@i",
+    "ID": "c:main.c@6157@F@Gra@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "13",
-      "line": "260",
+      "line": "262",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15694,13 +15694,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6849@F@Gra@losowa",
+    "ID": "c:main.c@6883@F@Gra@losowa",
     "What": "Variable",
     "defdec": "Def",
     "display": "losowa",
     "location": {
       "column": "11",
-      "line": "289",
+      "line": "291",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "losowa",
@@ -15708,13 +15708,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7072@F@Gra@losowa",
+    "ID": "c:main.c@7106@F@Gra@losowa",
     "What": "Variable",
     "defdec": "Def",
     "display": "losowa",
     "location": {
       "column": "11",
-      "line": "299",
+      "line": "301",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "losowa",
@@ -15728,7 +15728,7 @@
     "display": "void sortuj(int)",
     "location": {
       "column": "6",
-      "line": "307",
+      "line": "309",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "sortuj",
@@ -15736,13 +15736,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7289@F@sortuj@i",
+    "ID": "c:main.c@7323@F@sortuj@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "14",
-      "line": "309",
+      "line": "311",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15750,13 +15750,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7325@F@sortuj@maxi",
+    "ID": "c:main.c@7359@F@sortuj@maxi",
     "What": "Variable",
     "defdec": "Def",
     "display": "maxi",
     "location": {
       "column": "11",
-      "line": "310",
+      "line": "312",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "maxi",
@@ -15764,13 +15764,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7346@F@sortuj@maxiIndex",
+    "ID": "c:main.c@7380@F@sortuj@maxiIndex",
     "What": "Variable",
     "defdec": "Def",
     "display": "maxiIndex",
     "location": {
       "column": "11",
-      "line": "311",
+      "line": "313",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "maxiIndex",
@@ -15778,13 +15778,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7378@F@sortuj@j",
+    "ID": "c:main.c@7412@F@sortuj@j",
     "What": "Variable",
     "defdec": "Def",
     "display": "j",
     "location": {
       "column": "16",
-      "line": "312",
+      "line": "314",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "j",
@@ -15792,13 +15792,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7555@F@sortuj@j",
+    "ID": "c:main.c@7589@F@sortuj@j",
     "What": "Variable",
     "defdec": "Def",
     "display": "j",
     "location": {
       "column": "16",
-      "line": "319",
+      "line": "321",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "j",
@@ -15806,13 +15806,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7585@F@sortuj@tt",
+    "ID": "c:main.c@7619@F@sortuj@tt",
     "What": "Variable",
     "defdec": "Def",
     "display": "tt",
     "location": {
       "column": "14",
-      "line": "320",
+      "line": "322",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "tt",
@@ -15820,13 +15820,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7747@F@sortuj@t",
+    "ID": "c:main.c@7781@F@sortuj@t",
     "What": "Variable",
     "defdec": "Def",
     "display": "t",
     "location": {
       "column": "11",
-      "line": "325",
+      "line": "327",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "t",
@@ -15840,7 +15840,7 @@
     "display": "void GraEngine(int)",
     "location": {
       "column": "6",
-      "line": "333",
+      "line": "335",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "GraEngine",
@@ -15848,13 +15848,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7928@F@GraEngine@gh",
+    "ID": "c:main.c@7962@F@GraEngine@gh",
     "What": "Variable",
     "defdec": "Def",
     "display": "gh",
     "location": {
       "column": "12",
-      "line": "334",
+      "line": "336",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "gh",
@@ -15862,13 +15862,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@8146@F@GraEngine@i",
+    "ID": "c:main.c@8180@F@GraEngine@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "346",
+      "line": "348",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15876,13 +15876,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@8188@F@GraEngine@t",
+    "ID": "c:main.c@8222@F@GraEngine@t",
     "What": "Variable",
     "defdec": "Def",
     "display": "t",
     "location": {
       "column": "14",
-      "line": "347",
+      "line": "349",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "t",
@@ -15890,13 +15890,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@8219@F@GraEngine@setIndex",
+    "ID": "c:main.c@8253@F@GraEngine@setIndex",
     "What": "Variable",
     "defdec": "Def",
     "display": "setIndex",
     "location": {
       "column": "6",
-      "line": "348",
+      "line": "350",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "setIndex",
@@ -15910,7 +15910,7 @@
     "display": "void Opis(void)",
     "location": {
       "column": "6",
-      "line": "365",
+      "line": "364",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "Opis",
@@ -15924,7 +15924,7 @@
     "display": "void Autorzy(void)",
     "location": {
       "column": "6",
-      "line": "378",
+      "line": "377",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "Autorzy",
@@ -15938,7 +15938,7 @@
     "display": "char * concat(int)",
     "location": {
       "column": "7",
-      "line": "392",
+      "line": "391",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "concat",
@@ -15946,13 +15946,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9263@F@concat@arr",
+    "ID": "c:main.c@9063@F@concat@arr",
     "What": "Variable",
     "defdec": "Def",
     "display": "arr",
     "location": {
       "column": "14",
-      "line": "393",
+      "line": "392",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "arr",
@@ -15960,13 +15960,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9286@F@concat@len",
+    "ID": "c:main.c@9086@F@concat@len",
     "What": "Variable",
     "defdec": "Def",
     "display": "len",
     "location": {
       "column": "6",
-      "line": "394",
+      "line": "393",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "len",
@@ -15974,13 +15974,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9303@F@concat@i",
+    "ID": "c:main.c@9103@F@concat@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "395",
+      "line": "394",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -15988,13 +15988,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9350@F@concat@i",
+    "ID": "c:main.c@9150@F@concat@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "398",
+      "line": "397",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -16002,13 +16002,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9427@F@concat@num",
+    "ID": "c:main.c@9227@F@concat@num",
     "What": "Variable",
     "defdec": "Def",
     "display": "num",
     "location": {
       "column": "6",
-      "line": "402",
+      "line": "401",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "num",
@@ -16016,13 +16016,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9459@F@concat@iter",
+    "ID": "c:main.c@9259@F@concat@iter",
     "What": "Variable",
     "defdec": "Def",
     "display": "iter",
     "location": {
       "column": "6",
-      "line": "403",
+      "line": "402",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "iter",
@@ -16030,13 +16030,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9475@F@concat@i",
+    "ID": "c:main.c@9275@F@concat@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "6",
-      "line": "404",
+      "line": "403",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "i",
@@ -16044,13 +16044,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9585@F@concat@tempor",
+    "ID": "c:main.c@9385@F@concat@tempor",
     "What": "Variable",
     "defdec": "Def",
     "display": "tempor",
     "location": {
       "column": "6",
-      "line": "413",
+      "line": "412",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "tempor",
@@ -16064,7 +16064,7 @@
     "display": "void Highscore(void)",
     "location": {
       "column": "6",
-      "line": "425",
+      "line": "424",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "Highscore",
@@ -16072,13 +16072,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9816@F@Highscore@temp",
+    "ID": "c:main.c@9616@F@Highscore@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
     "location": {
       "column": "8",
-      "line": "427",
+      "line": "426",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "temp",
@@ -16086,13 +16086,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9830@F@Highscore@it",
+    "ID": "c:main.c@9630@F@Highscore@it",
     "What": "Variable",
     "defdec": "Def",
     "display": "it",
     "location": {
       "column": "6",
-      "line": "428",
+      "line": "427",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "it",
@@ -16100,13 +16100,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9844@F@Highscore@flag1",
+    "ID": "c:main.c@9644@F@Highscore@flag1",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag1",
     "location": {
       "column": "12",
-      "line": "429",
+      "line": "428",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag1",
@@ -16114,13 +16114,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9867@F@Highscore@flag2",
+    "ID": "c:main.c@9667@F@Highscore@flag2",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag2",
     "location": {
       "column": "12",
-      "line": "430",
+      "line": "429",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag2",
@@ -16128,13 +16128,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9890@F@Highscore@flag3",
+    "ID": "c:main.c@9690@F@Highscore@flag3",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag3",
     "location": {
       "column": "12",
-      "line": "431",
+      "line": "430",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag3",
@@ -16148,7 +16148,7 @@
     "display": "void menu(int)",
     "location": {
       "column": "6",
-      "line": "489",
+      "line": "488",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "menu",
@@ -16156,13 +16156,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@11011@F@menu@flag1",
+    "ID": "c:main.c@10811@F@menu@flag1",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag1",
     "location": {
       "column": "12",
-      "line": "491",
+      "line": "490",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag1",
@@ -16170,13 +16170,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@11035@F@menu@flag2",
+    "ID": "c:main.c@10835@F@menu@flag2",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag2",
     "location": {
       "column": "13",
-      "line": "492",
+      "line": "491",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag2",
@@ -16184,13 +16184,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@11059@F@menu@flag3",
+    "ID": "c:main.c@10859@F@menu@flag3",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag3",
     "location": {
       "column": "13",
-      "line": "493",
+      "line": "492",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag3",
@@ -16198,13 +16198,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@11083@F@menu@flag4",
+    "ID": "c:main.c@10883@F@menu@flag4",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag4",
     "location": {
       "column": "13",
-      "line": "494",
+      "line": "493",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "flag4",
@@ -16218,7 +16218,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "537",
+      "line": "536",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "main",
@@ -16232,7 +16232,7 @@
     "display": "void Timer_A(void)",
     "location": {
       "column": "18",
-      "line": "579",
+      "line": "578",
       "path": "C:\\Users\\lukas\\Desktop\\gierka\\gra\\kody\\Lcd\\AKGraGit\\main.c"
     },
     "name": "Timer_A",

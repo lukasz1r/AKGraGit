@@ -41,7 +41,7 @@ void wyswietl(char *napis, int linia, int pozycja)
 	}
 }
 
-
+//Funckja wyswietlajaca liczbe
 void wyswietlLiczba(int x){
 	int temp = x;
 	int licznik=0;
@@ -59,7 +59,8 @@ void wyswietlLiczba(int x){
 	wyswietl(tekst,2,6);
 }
 
-void blastKury() //dzwiek poruszania sie kury
+//dzwiek poruszania sie kury
+void blastKury() 
 {
     P4DIR &= ~0xF0;
     P4DIR |= 0x0C; // ustawienie buzzera
@@ -81,7 +82,8 @@ void blastKury() //dzwiek poruszania sie kury
     }
 }
 
-void blastZjedzenia() // dzwiek zjedzenia
+// dzwiek zjedzenia
+void blastZjedzenia() 
 {
     P4DIR &= ~0xF0;
     P4DIR |= 0x0C; // ustawienie buzzera
