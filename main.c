@@ -128,7 +128,7 @@ void zdefiniujZnaki(){
 	for(int i =0; i<8; i++)  SEND_CHAR(kura[i]);
         
         //lis
-	char lis[8] = {0x0, 0xA, 0x1F, 0x15, 0xE, 0x4, 0x0, 0x0};
+	char lis[8] = {0x0, 0xA, 0x1F, 0x15, 0xE, 0x4, 0x0, 0x2};
 	for(int i =0; i<8; i++)  SEND_CHAR(lis[i]);
         
         //ikonka po zderzeniu z lisem (czaszka)
